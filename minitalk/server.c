@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "minitalk.h"
-#include <stdio.h>
 
 void	ft_handler(int signal)
 {
@@ -35,13 +34,13 @@ int	main(int argc, char **argv)
 	(void)argv;
 	if (argc != 1)
 	{
-		printf("Wrong format\n");
-		printf("Try: ./server\n");
+		ft_printf("Wrong format\n");
+		ft_printf("Try: ./server\n");
 		return (0);
 	}
 	pid = getpid();
-	printf("PID %d\n", pid);
-	printf("Waiting for a message...\n");
+	ft_printf("PID %d\n", pid);
+	ft_printf("Waiting for a message...\n");
 	while (argc == 1)
 	{
 		signal(SIGUSR1, ft_handler);

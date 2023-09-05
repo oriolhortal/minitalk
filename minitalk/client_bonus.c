@@ -6,7 +6,7 @@
 /*   By: ohortal- <ohortal-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 12:22:28 by ohortal-          #+#    #+#             */
-/*   Updated: 2023/07/19 14:31:20 by ohortal-         ###   ########.fr       */
+/*   Updated: 2023/09/05 10:33:52 by ohortal-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "minitalk.h"
@@ -59,7 +59,7 @@ void	ft_send_bits(int pid, char i)
 			kill(pid, SIGUSR1);
 		else
 			kill(pid, SIGUSR2);
-		usleep(100);
+		usleep(50);
 		bit++;
 	}
 }

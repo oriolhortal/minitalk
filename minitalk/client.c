@@ -74,8 +74,8 @@ int	main(int argc, char **argv)
 	}
 	else
 	{
-		printf("Wrong format\n");
-		printf("Try: ./client <PID> <MESSAGE>\n");
+		ft_printf("Wrong format\n");
+		ft_printf("Try: ./client <PID> <MESSAGE>\n");
 		return (1);
 	}
 	return (0);
