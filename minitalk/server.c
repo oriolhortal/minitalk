@@ -21,7 +21,7 @@ void	ft_handler(int signal)
 	bit++;
 	if (bit == 8)
 	{
-		printf("%c", i);
+		ft_printf("%c", i);
 		bit = 0;
 		i = 0;
 	}
